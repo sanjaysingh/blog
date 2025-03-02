@@ -1,0 +1,101 @@
+/* Custom styles for the blog */
+
+/* Light blue background for the masthead */
+.masthead {
+  background-color: #e6f2ff !important;
+}
+
+/* Make masthead menu transparent */
+.masthead__menu {
+  background-color: transparent !important;
+}
+
+/* Ensure all elements within the masthead are transparent */
+.greedy-nav {
+  background-color: transparent !important;
+}
+
+.greedy-nav .visible-links a {
+  background-color: transparent !important;
+}
+
+/* Style for non-clickable breadcrumb items */
+.breadcrumbs ol li span {
+  color: #898c8f;
+  font-size: 0.8em;
+}
+
+/* Align breadcrumbs with post content */
+.breadcrumbs {
+  padding-inline: 1em !important;
+  margin-inline: auto !important;
+  max-width: 100% !important;
+}
+
+@media (min-width: 80em) {
+  .breadcrumbs {
+    max-width: 1280px !important;
+  }
+}
+
+.breadcrumbs ol {
+  float: none !important;
+  width: 100% !important;
+  padding-inline-start: 0 !important;
+}
+
+/* Archives page styling */
+.archives-content h2 {
+  margin-top: 1.5em;
+  border-bottom: 1px solid #f2f3f3;
+  padding-bottom: 0.5em;
+  color: #333;
+}
+
+.archives-content ul {
+  list-style-type: none;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.archives-content li {
+  margin-bottom: 0.5em;
+}
+
+.archives-content li small {
+  color: #898c8f;
+  margin-left: 0.5em;
+}
+
+.archive .page__title {
+  margin-bottom: 1em;
+}
+
+/* Remove sidebar spacing */
+#main {
+  width: 100% !important;
+}
+
+@media (min-width: 64em) {
+  #main {
+    padding-left: 0 !important;
+  }
+}
+
+@media (min-width: 80em) {
+  #main {
+    padding-left: 0 !important;
+  }
+}
+
+/* Ensure full width for content */
+.page {
+  width: 100% !important;
+}
+
+@media (min-width: 64em) {
+  .page {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+} 

@@ -1,0 +1,32 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts | sort: 'date' | reverse %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    <article class="archive__item">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+      </h2>
+      {% if post.date %}
+        <p class="page__meta"><i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %d, %Y" }}</p>
+      {% endif %}
+      <div class="archive__item-excerpt" itemprop="description">
+        {{ post.content | markdownify }}
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+{% include paginator.html %}

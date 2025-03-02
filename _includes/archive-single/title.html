@@ -1,0 +1,3 @@
+{% if post.date %}
+  <p class="page__meta"><i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %d, %Y" }}</p>
+{% endif %}
