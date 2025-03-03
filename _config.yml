@@ -14,7 +14,7 @@ subtitle                 : "An another perspective"
 name                     : "Sanjay Singh"
 description              : "Sanjay Singh's Blog. Sharing my thoughts and experiences."
 url                      : "https://blog.sanjaysingh.net"
-baseurl                  : "/blog"
+baseurl                  : "" # remove /blog to serve at root
 repository               : "sanjaysingh/blog"
 teaser                   : # path of fallback teaser image
 logo                     : # path of logo image to display in the masthead
