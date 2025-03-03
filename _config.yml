@@ -2,9 +2,9 @@
 # Minimal Mistakes Jekyll Theme Configuration
 
 # Theme settings
-theme                    : "minimal-mistakes-jekyll"
+# theme: "minimal-mistakes-jekyll"  # Not needed with remote_theme
 minimal_mistakes_skin    : "default"
-remote_theme            : "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 # Site Settings
 locale                   : "en-US"
