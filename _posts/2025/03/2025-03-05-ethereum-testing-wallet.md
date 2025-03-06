@@ -28,7 +28,6 @@ The wallet is built with several security principles in mind:
 2. **No External Dependencies**: The wallet runs as a static site with minimal dependencies
 3. **Transparent Code**: The entire [source code is available on GitHub](https://github.com/sanjaysingh/staticsites/tree/master/ethwallet)
 4. **Ephemeral Storage**: Keys are never saved between sessions
-5. **Network Isolation**: Hosted on a static HTTPS domain
 
 ## Key Features
 
@@ -55,7 +54,7 @@ The wallet includes essential features needed for testing:
 
 While the wallet is designed with security in mind, please note:
 
-⚠️ **This is a TESTING tool only. Do not use it for production or with real funds.**
+⚠️ **This is a TESTING tool only. Do not use it with real funds.**
 
 - Always use test accounts and test networks
 - Never enter production private keys or seed phrases
