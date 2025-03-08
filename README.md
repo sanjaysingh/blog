@@ -1,6 +1,6 @@
-# Personal Blog
+# My Personal Blog
 
-This is a my personal based blog. It is based off Jekyll. It can be run locally using either Docker or traditional Ruby setup.
+This is a my personal blog. It is based off Jekyll. It can be run locally using either Docker or traditional Ruby setup.
 
 ## Prerequisites
 
