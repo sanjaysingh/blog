@@ -32,12 +32,9 @@ I wanted a teaching and demo tool for GraphQL that anyone can open, tweak, and s
 
 The playground keeps your query synced to the URL so you can share exactly what you’re looking at. When a URL is opened, the query auto-loads and executes.
 
-- Basic users query:
-  - `http://localhost:8000/?query=query%20%7B%0A%20%20users%20%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20email%0A%20%20%7D%0A%7D`
-- Specific user by id:
-  - `http://localhost:8000/?query=query%20GetUserById%20%7B%0A%20%20user(id%3A%20%225%22)%20%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20email%0A%20%20%7D%0A%7D`
-- Posts with authors:
-  - `http://localhost:8000/?query=query%20GetPostsWithAuthors%20%7B%0A%20%20posts(limit%3A%205)%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%20%20%20%20author%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20email%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D`
+- [Basic users query](https://gql.sanjaysingh.net/?query=query%20%7B%0A%20%20users%20%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20email%0A%20%20%7D%0A%7D)
+- [Specific user by id](https://gql.sanjaysingh.net/?query=query%20GetUserById%20%7B%0A%20%20user(id%3A%20%225%22)%20%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20email%0A%20%20%7D%0A%7D)
+- [Posts with authors](https://gql.sanjaysingh.net/?query=query%20GetPostsWithAuthors%20%7B%0A%20%20posts(limit%3A%205)%20%7B%0A%20%20%20%20id%0A%20%20%20%20title%0A%20%20%20%20author%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20email%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
 
 ## Schema and sample data
 
