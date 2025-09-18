@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "In-Browser GraphQL Playground with Monaco, Deep Linking, and Sample Data"
+title: "In-Browser GraphQL Playground"
 date: 2025-09-17 10:00:00 +0000
 categories: [Tools, GraphQL]
 tags: [graphql, monaco, javascript, web-tools, playground, deep-linking]
