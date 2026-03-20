@@ -98,4 +98,4 @@ The blog will automatically rebuild when you make changes to the source files.
 
 ## Deployment
 
-The site is automatically deployed through GitHub Pages when changes are pushed to the main branch.
+The site is automatically deployed through GitHub Pages when changes are pushed to the master branch.
