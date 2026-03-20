@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Domain Finder: A Tool to Discover Available Domain Names"
-date: 2026-03-20 11:00:00 +0000
+date: 2026-03-20 00:00:00 +0000
 categories: [Tools, Web]
 tags: [domain, domain-finder, web-tools]
 ---
