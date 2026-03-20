@@ -6,18 +6,16 @@ categories: [Tools, Web]
 tags: [domain, domain-finder, web-tools]
 ---
 
-I've built [Domain Finder](https://github.com/sanjaysingh/domain-finder)—a focused tool to help you find available domain names without the friction of typical registration services.
+I've built Domain Finder—a tool to check domain availability and discover available domains. It uses RDAP to verify registration status.
 
 ## Features
 
-- **Check domain availability** – See if a domain is available for registration
+- **Check domain** – Enter any domain to see if it's available or taken
+- **Find domains** – Generate random domain names and check availability
+  - Choose TLD (.com, .net, .org, .io, .dev, .app, .co, .ai, .xyz, .me, .tech, .info)
+  - Configure name length (4–8 characters)
+  - Configure number of candidates to check (10, 20, 30, or 40)
 
-## How to Use
+## Try it
 
-1. Visit the [Domain Finder repository](https://github.com/sanjaysingh/domain-finder) on GitHub
-2. Follow the setup instructions to run it locally
-3. Enter a domain name and check availability
-
-## Get Started
-
-**[https://github.com/sanjaysingh/domain-finder](https://github.com/sanjaysingh/domain-finder)**
+**[https://domainfinder.meilt.com/](https://domainfinder.meilt.com/)**
