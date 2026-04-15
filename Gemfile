@@ -1,5 +1,9 @@
 source "https://rubygems.org"
 
+# Ruby 3.4+ moved some stdlib into gems; Jekyll 3.x / Liquid still require these.
+gem "csv"
+gem "bigdecimal"
+
 # Use github-pages gem for GitHub Pages compatibility
 gem "github-pages", group: :jekyll_plugins
 gem "webrick", "~> 1.8"
