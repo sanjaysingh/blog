@@ -7,5 +7,4 @@ tags:
 
 Sometimes, you get this error when installing SQL Server 2005. Following is what has fixed the issue for me:
 
- 
- * Go to windows services (Start->Run->services.msc) and start Windows Installer service if it is not already started.  If you are not able to start Windows Installer service, run **msiexec /regserver **command from command prompt.
+* Go to windows services (Start->Run->services.msc) and start Windows Installer service if it is not already started.  If you are not able to start Windows Installer service, run **msiexec /regserver** command from command prompt.

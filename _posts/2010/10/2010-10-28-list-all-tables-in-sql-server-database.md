@@ -7,7 +7,6 @@ tags:
 
 Following SQL query gives you names of all the tables in the currently active database:
 
- 
 ```html
 SELECT Name FROM Sys.Tables
 ```

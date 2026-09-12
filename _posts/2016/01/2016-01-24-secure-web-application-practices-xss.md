@@ -12,6 +12,5 @@ An attacker can use XSS to send a malicious script to an unsuspecting user. The 
 
 Following are the some of the practices that helps mitigate the risk of XSS in a web application.
 
-1. HTML Escape before inserting untrusted data into HTML element content. Untrusted data can be malicious scripts that when put into html context can cause it to execute and do nasty things. 
+1. HTML Escape before inserting untrusted data into HTML element content. Untrusted data can be malicious scripts that when put into html context can cause it to execute and do nasty things.
 2. Attribute escape before Inserting untrusted data into HTML common attributes
-3.

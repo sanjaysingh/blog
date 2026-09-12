@@ -21,12 +21,6 @@ system.web>
 
 ```
 X-AspNetMvc-Version
-**
-**X-Powered-By
+X-Powered-By
 Server
 ```
-
-1. **
-**
-
-###

@@ -8,7 +8,6 @@ tags:
 
 Following simple batch file can be used to build a solution in Visual Studio 2010. Here I use devenv.exe to build the solution from command line so that we get the same behavior as if building from IDE. Save below given batch script into a .bat file, update the solution file path and you are all set to build.
 
- 
 ```html
 echo off
 

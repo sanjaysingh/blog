@@ -7,7 +7,6 @@ tags:
 
 Following sql script gives all the columns of a given table (‘Employee’ in this example) in a Firebird database.
 
- 
 ```html
 SELECT Fields.RDB$FIELD_NAME "Column Name" FROM RDB$RELATION_FIELDS Fields
 WHERE Fields.RDB$RELATION_NAME = 'EMPLOYEE' and Fields.RDB$SYSTEM_FLAG = 0

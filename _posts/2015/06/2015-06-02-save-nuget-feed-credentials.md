@@ -13,4 +13,4 @@ Ensure that you have nuget.exe downloaded and your PATH variable is updated with
 
 [https://www.nuget.org/nuget.exe](https://www.nuget.org/nuget.exe)
 
-This command updated the machine wide config which is located at %APPDATA%\NuGet\NuGet.Config
+This command updated the machine wide config which is located at %APPDATA%\NuGet\NuGet.Config

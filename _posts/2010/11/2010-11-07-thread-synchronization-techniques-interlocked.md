@@ -8,7 +8,6 @@ tags:
 
 * Windows follows what is called preemtive multithreading where a thread can be suspended after loading a value from memory address, but before having a chance to alter it and store it. Thus calls like following is not guaranteed to be atomic:
 
- 
 > ```
 > x += 1;
 > ```

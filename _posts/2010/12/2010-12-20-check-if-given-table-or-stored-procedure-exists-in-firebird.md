@@ -7,11 +7,10 @@ tags:
 
 Following SQL checks to see if table named Employee exists in the database and if it does, drops it.
 
- 
 ```python
 SET TERM ^ ;
 EXECUTE BLOCK AS BEGIN
-if (exists(select 1 from rdb$relations where rdb$relation_name = 'EMPLOYEE')) then 
+if (exists(select 1 from rdb$relations where rdb$relation_name = 'EMPLOYEE')) then
 execute statement 'drop table employee;';
 END^
 SET TERM ; ^
@@ -22,7 +21,7 @@ Note that conditional operator IF cannot be used outside of PSQL so we have to p
 ```python
 SET TERM ^ ;
 EXECUTE BLOCK AS BEGIN
-if (exists(select 1 from RDB$PROCEDURES where rdb$Procedure_name = 'SEL_EMPLOYEE')) then 
+if (exists(select 1 from RDB$PROCEDURES where rdb$Procedure_name = 'SEL_EMPLOYEE')) then
 execute statement 'drop procedure SEL_EMPLOYEE;';
 END^
 SET TERM ; ^

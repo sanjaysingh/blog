@@ -5,13 +5,10 @@ tags:
   - SQL Server
 ---
 
-Here I will show you how to write an UPDATE statement in SQL Server to update different rows on different conditions. 
-
- 
+Here I will show you how to write an UPDATE statement in SQL Server to update different rows on different conditions.
 
 Following UPDATE sql statement updates salaries of the Employee table, giving 20% raise to the employees having salary less than or equal to 5000, 10% raise to the employees having salary between 5000 and 10000, 5% raise to the employees having salary between 10000 and 20000, and no raise for the employees with salary greater then or equal to 30000.
 
- 
 ```html
 UPDATE EMPLOYEE
 SET Salary = CASE

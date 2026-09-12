@@ -7,7 +7,6 @@ tags:
 
 Following SQL query will give you names of all the user defined tables in a Firebird database.
 
- 
 ```html
 SELECT rdb$relation_name AS "Table Name"
 FROM rdb$relations

@@ -8,11 +8,8 @@ tags:
 
 * ReaderWriterLock class defines a lock that supports single writer and multiple readers. This is used to synchronize access to a resource. In situations where resource is changed infrequently, a ReaderWriterLock provides better throughput than normal locks like Monitor.  A thread can hold a reader lock or a writer lock but not both.  Every call to acquire a lock increases the lock count. So you have to call release lock as many times as you call acquire lock.  Readers and Writers are queued separately. When a thread releases a writer lock, all threads waiting in the reader queue are granted reader locks. When all of those reader locks have been released, the next thread waiting in the writer queue, if any, is granted the writer lock, and so on.  When a thread in the writer queue is waiting for active readers locks to be released, threads requesting new reader locks accumulate in the reader queue. This helps protect writers against indefinite blockage by readers.  Most methods for acquiring locks on ReaderWriterLock accept time-out values. Use time-out to avoid deadlocks in your application.
 
- 
-
 Below, i will show the use of ReaderWriterLock class. We have a BookStore class and a Book class. BookStore class maintains a collection of Books. ReaderWriterLock makes perfect sense here because in BookStore write operation is less frequent than read operation (You get new books less frequently than number of customers that you have to cater to).
 
- 
 ```python
 public class Book
 {

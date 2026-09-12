@@ -7,7 +7,6 @@ tags:
 
 Following SQL query gives list of all the table names and their column names in a Firebird database.
 
- 
 ```html
 SELECT Relations.RDB$RELATION_NAME "Table Name", Fields.RDB$FIELD_NAME "Column Name" FROM RDB$RELATION_FIELDS Fields
 JOIN RDB$RELATIONS Relations ON

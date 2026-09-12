@@ -5,9 +5,8 @@ tags:
   - Algorithms
 ---
 
-Here, I am going to present a very compact recursive c# code to compute all the permutations of a given string. Look at the following c# method: 
+Here, I am going to present a very compact recursive c# code to compute all the permutations of a given string. Look at the following c# method:
 
- 
 ```html
 public void PrintPermutations(string stringToPermute, string prefix)
 {
@@ -24,5 +23,6 @@ public void PrintPermutations(string stringToPermute, string prefix)
 ```
 
 To find all the permutations of the string “ABC”, for example, you will call the method as follows:
-PrintPermutations("ABC", "");
+
+`PrintPermutations("ABC", "");`
 Also note that, I assume that stringToPermute parameter is a string containing non-repeating characters.

@@ -7,10 +7,9 @@ tags:
 
 Following SQL query gives you names of all the stored procedures in the active database:
 
- 
 ```html
 SELECT SystemObjects.Name
-FROM SYS.OBJECTS SystemObjects 
-WHERE SystemObjects.type = 'p' 
+FROM SYS.OBJECTS SystemObjects
+WHERE SystemObjects.type = 'p'
 ORDER BY SystemObjects.Name;
 ```

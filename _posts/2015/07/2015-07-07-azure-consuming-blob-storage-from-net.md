@@ -10,13 +10,9 @@ Azure Blob storage is a service for storing large amounts of unstructured data, 
 Common uses of Blob storage include:
 
 * Serving images or documents directly to a browser
-
 * Storing files for distributed access
-
 * Streaming video and audio
-
 * Performing secure backup and disaster recovery
-
 * Storing data for analysis by an on-premises or Azure-hosted service
 
 I have unit test driven repository on Github to show common uses of Blob storage.
