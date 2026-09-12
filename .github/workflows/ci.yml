@@ -21,3 +21,7 @@ jobs:
         run: bundle exec jekyll build --strict_front_matter
         env:
           JEKYLL_ENV: production
+          JEKYLL_BUILD_REVISION: ${{ github.sha }}
+
+      - name: Confirm asset cache bust
+        run: grep -q 'custom.css?v=' _site/index.html
