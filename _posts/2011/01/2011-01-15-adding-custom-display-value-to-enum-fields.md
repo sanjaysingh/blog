@@ -7,15 +7,10 @@ tags:
 
 Most of the times, display value for our custom enums are different from actual field value. We usually want to have different display string than actual field of the enum.
 
- 
-
 Thanks to extension method, we can extend Enum to add functionality to it. You can now add methods to an enum which was previously not possible. Here i am going to show two approaches of extending Enums to support display value for Enum fields.
-
- 
 
 Following is the 1st approach.
 
- 
 ```python
 using System;
 using System.Collections.Generic;
@@ -66,7 +61,7 @@ namespace SampleWinApplication
         }
     }
 
-    
+
 }
 ```
 
@@ -137,7 +132,7 @@ namespace SampleWinApplication
         }
     }
 
-    
+
 }
 ```
 

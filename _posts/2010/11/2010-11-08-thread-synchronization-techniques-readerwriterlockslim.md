@@ -7,19 +7,16 @@ tags:
 ---
 
 * If you haven’t read ReaderWriterLock, i would suggest read that first at [http://www.sanjaysingh.net/2010/11/thread-synchronization-techniques_9866.html](http://www.sanjaysingh.net/2010/11/thread-synchronization-techniques_9866.html)
- * This class was introduced in .NET framework 3.5. This is similar to ReaderWriterLock but it has simplified rules for recursive locks and for upgrading and downgrading lock state and this avoids many cases of potential deadlocks.
- * Microsoft recommends it for all future development.
- * By default, new instances of ReaderWriterLockSlim are created with LockRecursionPolicy.NoRecusrion and therefore do not allow recursive lock calls. Contrast this with ReaderWriterLock which defaults to allowing recursive locks making your code more prone to deadlocks. For example, if the current thread entered read mode and it makes another call to acquire read lock, LockRecursionException is thrown. But remember that ReaderWriterLockSlim can also be instantiated to allow for recursive locks, and in that case this call will be allowed.
- * A thread can enter lock in three modes -  read mode, write mode and upgradable read mode.
- * Regardless of the recursion policy, only one thread can be in write mode at any given time. When one thread is in write mode, no other thread can enter the lock in any mode.
- * Only one thread can be in upgradable mode at any given time.
- * Any number of threads can be in read mode.
-
- 
+* This class was introduced in .NET framework 3.5. This is similar to ReaderWriterLock but it has simplified rules for recursive locks and for upgrading and downgrading lock state and this avoids many cases of potential deadlocks.
+* Microsoft recommends it for all future development.
+* By default, new instances of ReaderWriterLockSlim are created with LockRecursionPolicy.NoRecusrion and therefore do not allow recursive lock calls. Contrast this with ReaderWriterLock which defaults to allowing recursive locks making your code more prone to deadlocks. For example, if the current thread entered read mode and it makes another call to acquire read lock, LockRecursionException is thrown. But remember that ReaderWriterLockSlim can also be instantiated to allow for recursive locks, and in that case this call will be allowed.
+* A thread can enter lock in three modes -  read mode, write mode and upgradable read mode.
+* Regardless of the recursion policy, only one thread can be in write mode at any given time. When one thread is in write mode, no other thread can enter the lock in any mode.
+* Only one thread can be in upgradable mode at any given time.
+* Any number of threads can be in read mode.
 
 Below, i will give the same BookStore example explained in the above link using ReaderWriterLockSlim class. Behavior of the class remains same. Note the difference of use.
 
- 
 ```python
 public class Book
 {

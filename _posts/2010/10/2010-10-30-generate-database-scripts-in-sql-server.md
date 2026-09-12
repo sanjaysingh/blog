@@ -5,7 +5,7 @@ tags:
   - SQL Server
 ---
 
-SQL Server gives a very useful tool ‘Database Publish Wizard’ that can be used to script and publish SQL Server database. For SQL Server 2005 installation, this tool is usually located at **[Program Files]\Microsoft SQL Server\90\Tools\Publishing\SqlPubWiz.exe. **This tool has both command line as well as GUI interface.
+SQL Server gives a very useful tool ‘Database Publish Wizard’ that can be used to script and publish SQL Server database. For SQL Server 2005 installation, this tool is usually located at **[Program Files]\Microsoft SQL Server\90\Tools\Publishing\SqlPubWiz.exe.** This tool has both command line as well as GUI interface.
 
 Here I am going to show some sample command line queries that can be used to generate database scripts. For the sake of example, let us assume that database name is “MyDatabase” which is hosted on SQL Server instance “SQLEXPRESS” on the local machine.
 

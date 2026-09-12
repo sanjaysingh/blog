@@ -1,5 +1,5 @@
 ---
-title: "AspNet Core&#58; Appsettings from environment variables gotcha"
+title: "AspNet Core: Appsettings from environment variables gotcha"
 date: 2017-07-04 11:10:00 +0000
 tags:
   - uncategorized

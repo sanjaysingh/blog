@@ -16,7 +16,7 @@ tags:
 
 You can follow these steps below to get up and running with your first .Net core Hello World project.
 
-1. Download and install .Net core from [https://www.microsoft.com/net/core#windows](https://www.microsoft.com/net/core#windows)
+1. Download and install .Net core from [https://www.microsoft.com/net/core#windows](https://www.microsoft.com/net/core#windows)
 2. Open command prompt and create a new directory and 'cd' to that directory
 3. Create a new .Net core project in the 'newproject' directory that we created above.
 4. Restore all the dependencies for the project

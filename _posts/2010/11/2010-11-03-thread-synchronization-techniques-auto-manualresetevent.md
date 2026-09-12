@@ -7,22 +7,16 @@ tags:
 
 AutoResetEvent and ManualResetEvent are what is called Wait Handles that is used to signal the state of one thread to another thread. Threads can use wait handles to notify other threads that they need exclusive access to a resource. Other threads must then wait to use this resource until the Wait Handle is no longer in use. Wait Handles have two states signaled and nonsignaled. A Wait Handle that is not owned by any thread is in the signaled state. A Wait Handle that is owned by a thread is in the nonsignaled state.
 
- 
- * Threads request ownership of a wait handle by calling one of the wait methods, such as WaitOne, WaitAny, or WaitAll. All of these methods are blocking calls. If no other thread owns the wait handle, the call immediately returns true, the wait handle’s status is changed to nonsignaled, and the thread that owns the wait handle continues to run.
- * Threads that own a wait handle call the Set method when they are done.
- * Other threads can reset the status of a wait handle to nonsignaled by calling the reset method.
- * Once it has been signaled ManualResetEvent remains signaled until it is manually reset. That is calls to WaitOne return immediately.
- * AutoResetEvent resets automatically after each release. For example, let’s assume that we have three threads waiting on a manual reset event wait handle. As soon as we signal (Set) this ManualResetEvent, all the three threads are released. In contrast, had it been AutoResetEvent, it would release only one thread, resetting the state automatically.
-
- 
+* Threads request ownership of a wait handle by calling one of the wait methods, such as WaitOne, WaitAny, or WaitAll. All of these methods are blocking calls. If no other thread owns the wait handle, the call immediately returns true, the wait handle’s status is changed to nonsignaled, and the thread that owns the wait handle continues to run.
+* Threads that own a wait handle call the Set method when they are done.
+* Other threads can reset the status of a wait handle to nonsignaled by calling the reset method.
+* Once it has been signaled ManualResetEvent remains signaled until it is manually reset. That is calls to WaitOne return immediately.
+* AutoResetEvent resets automatically after each release. For example, let’s assume that we have three threads waiting on a manual reset event wait handle. As soon as we signal (Set) this ManualResetEvent, all the three threads are released. In contrast, had it been AutoResetEvent, it would release only one thread, resetting the state automatically.
 
 Following sample class simulates processing of network data. Methods ReceiveData and ProcessData run on two different threads. Note that here we are achieving synchronization between the thread using AutoResetEvent. The ReceiveData thread is continuously generating data and pushing it into buffer. It also signals the AutoResetEvent as soon as some data is received. The ProcessData thread waits on the AutoResetEvent and processes the data as soon as signaled.
 
- 
-
 Note that we do not need to reset the AutoResetEvent, as it is automatically done after every set. Look at the example now:
 
- 
 ```javascript
 using System;
 using System.Collections.Generic;
@@ -97,7 +91,7 @@ namespace ConsoleApplication1
             NetworkDataSimulator nds = new NetworkDataSimulator();
             (new Thread(nds.ProcessData)).Start();
             (new Thread(nds.ReceiveData)).Start();
-            
+
         }
     }
 }

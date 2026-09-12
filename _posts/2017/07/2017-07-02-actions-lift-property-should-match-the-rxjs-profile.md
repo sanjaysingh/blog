@@ -9,9 +9,10 @@ There is a breaking change in TypeScript version 2.4.1+ and it breaks the hosted
 
 Fix the typescript version to 2.4.0 to fix this.
 
+```
 -    "typescript": "^2.2.1"
-
 +    "typescript": "2.4.0"
+```
 
 See a related thread here
 

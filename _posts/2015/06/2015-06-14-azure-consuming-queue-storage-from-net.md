@@ -11,7 +11,6 @@ Azure Queue storage is a service for storing large numbers of messages that can 
 Common uses of Queue storage include:
 
 * Creating a backlog of work to process asynchronously
-
 * Passing messages from an Azure Web role to an Azure Worker role
 
 I have unit test driven repository on Github to show common uses of queue storage.

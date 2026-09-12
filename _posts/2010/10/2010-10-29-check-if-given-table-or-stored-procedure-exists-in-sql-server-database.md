@@ -9,7 +9,7 @@ Following SQL statement can be used to check if stored procedure named “Select
 
 ```html
 IF EXISTS (SELECT SystemObjects.Name
-FROM SYS.OBJECTS SystemObjects 
+FROM SYS.OBJECTS SystemObjects
 WHERE SystemObjects.type = 'p' AND SystemObjects.Name = 'SelectEmployee')
 BEGIN
 DROP PROCEDURE SelectEmployee

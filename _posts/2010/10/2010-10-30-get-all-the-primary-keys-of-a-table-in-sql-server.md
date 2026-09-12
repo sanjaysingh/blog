@@ -7,7 +7,6 @@ tags:
 
 Following SQL query can be used to list all the primary keys of a table. In this given example, we assume that table name is ‘Employee’.
 
- 
 ```html
 SELECT SysColumns.Name
 FROM SysIndexes SysIndexes

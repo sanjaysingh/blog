@@ -7,7 +7,6 @@ tags:
 
 Following SQL script drops all user stored procedures from a SQL Server database.
 
- 
 ```html
 USE TestDatabase
 

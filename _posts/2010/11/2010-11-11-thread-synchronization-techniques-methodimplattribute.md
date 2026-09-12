@@ -6,15 +6,12 @@ tags:
 ---
 
 * This is one more thread synchronization technique where you decorate a method with a particular attribute. We use attribute MethodImplAttribute with option of MethodImplOptions.Synchronized to make the whole method thread safe.
- * MethodImplAttribute is in [System.Runtime.CompilerServices](http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.aspx) namespace.
- * This attribute option ensures that the method can be executed by only one thread at a time.
- * Note that this class lies under CompilerServices namespace. So when you compile your app, compiler inserts **lock **statements around the body of the method to make the whole method thread safe. For the instance method it uses **lock(this) **and for the static methods it uses **lock(typeof(classname)). **Because of this, the use of this approach for thread synchronization is discouraged. Note that it is usually not a good practice to use **lock **on publicly visible objects/types. This is because somebody else might, in the future, use the same object/type to lock some other code segment, thus decreasing concurrency and increasing the chance of deadlock.
-
- 
+* MethodImplAttribute is in [System.Runtime.CompilerServices](http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.aspx) namespace.
+* This attribute option ensures that the method can be executed by only one thread at a time.
+* Note that this class lies under CompilerServices namespace. So when you compile your app, compiler inserts **lock** statements around the body of the method to make the whole method thread safe. For the instance method it uses **lock(this)** and for the static methods it uses **lock(typeof(classname)).** Because of this, the use of this approach for thread synchronization is discouraged. Note that it is usually not a good practice to use **lock** on publicly visible objects/types. This is because somebody else might, in the future, use the same object/type to lock some other code segment, thus decreasing concurrency and increasing the chance of deadlock.
 
 Following code snippet shows the use of MethodImplAttribute to synchronize two threads. We have a DataStore class which is accessed by two threads to store data. In the AddData method of DataStore, we simulate a delay in data processing by using Thread.Sleep. Here if we remove the MethodImplAttribute from the AddData method, you will randomly get System.ArgumentException. Following is the sample application:
 
- 
 ```python
 using System;
 using System.Threading;

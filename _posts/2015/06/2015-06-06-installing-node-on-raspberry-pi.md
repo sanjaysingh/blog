@@ -7,12 +7,10 @@ tags:
 
 Add apt.adafruit.com repository to PI's sources
 
-*curl -sLS https://apt.adafruit.com/add | sudo bash*
-**
-**
+`curl -sLS https://apt.adafruit.com/add | sudo bash`
 
 Install latest node
 
-*sudo apt-get install node*
+`sudo apt-get install node`
 
-More details here [https://learn.adafruit.com/node-embedded-development/installing-node-dot-js](https://learn.adafruit.com/node-embedded-development/installing-node-dot-js)
+More details here [https://learn.adafruit.com/node-embedded-development/installing-node-dot-js](https://learn.adafruit.com/node-embedded-development/installing-node-dot-js)
