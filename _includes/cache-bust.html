@@ -1,0 +1,9 @@
+{% comment %}
+  GitHub Pages caches static assets by URL and does not support cache purge.
+  Use the commit SHA when available so CSS/JS updates are fetched after deploy.
+{% endcomment %}
+{% if site.github.build_revision %}
+  {% assign cache_bust = site.github.build_revision | slice: 0, 7 %}
+{% else %}
+  {% assign cache_bust = site.time | date: '%s' %}
+{% endif %}
